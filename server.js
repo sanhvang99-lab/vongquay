@@ -77,5 +77,8 @@ app.post("/history",(req,res)=>{
   let {user} = req.body;
   res.json(db.users[user].history);
 });
+app.get("/admin/list",(req,res)=>{
+  res.json(db.withdraws || []);
+});
 
-app.listen(3000,()=>console.log("http://Shopmaymansanh2003.vn"));
+app.listen(process.evn.PORT || 3000);()=>console.log("http://Shopmayman.vn");
