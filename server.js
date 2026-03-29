@@ -81,4 +81,4 @@ app.get("/admin/list",(req,res)=>{
   res.json(db.withdraws || []);
 });
 
-app.listen(process.evn.PORT || 3000);()=>console.log("http://Shopmayman.vn");
+app.listen(process.env.PORT || 3000);()=>console.log("http://Shopmayman.vn");
